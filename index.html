@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>instaprofile</title>
+    </head>
+<body>
+    <h2>Insta Profile Viewer</h2>
+    <input type="text" id="username" placeholder="Enter Username"><br><br>
+    <button onclick ="search()">Find</button><br><br>
+    <a href="" id="ans"></a>
+
+    <script>
+        let username=document.getElementById("username");
+        let ans=document.getElementById("ans");
+        function search(){
+            ans.href ="https://www.instagram.com/"+ username.value;
+            document.getElementById("ans").innerHTML="View Profile";
+        }
+    </script>
+</body>
+</html>
+
